@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="grid gap-12 lg:grid-cols-[1.5fr_1fr_1fr_1fr]">
           <div>
             <Link to="/" className="inline-block" aria-label="MARFAER GROUPE - Accueil">
-              <img src="/marfaer-logo.png" alt="MARFAER GROUPE" className="h-16 w-auto object-contain" />
+              <img src={`${import.meta.env.BASE_URL}marfaer-logo.png`} alt="MARFAER GROUPE" className="h-16 w-auto object-contain" />
             </Link>
 
             <p className="mt-6 max-w-sm text-sm leading-7 text-neutral-500">

@@ -61,7 +61,7 @@ export default function Navbar() {
             aria-label="MARFAER GROUPE - Accueil"
           >
             <img
-              src="/marfaer-logo.png"
+              src={`${import.meta.env.BASE_URL}marfaer-logo.png`}
               alt="MARFAER GROUPE"
               className="h-[70px] w-auto object-contain"
             />
