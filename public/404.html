@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirection</title>
+    <script>
+      const base = "/abbas/";
+      const path = window.location.pathname.startsWith(base)
+        ? window.location.pathname.slice(base.length)
+        : "";
+      const target = `${base}?route=${encodeURIComponent(`/${path}${window.location.search}${window.location.hash}`)}`;
+      window.location.replace(target);
+    </script>
+  </head>
+</html>
