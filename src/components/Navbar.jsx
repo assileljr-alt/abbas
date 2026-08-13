@@ -78,12 +78,6 @@ export default function Navbar() {
               Accueil
             </NavLink>
 
-            {/* LE GROUPE */}
-
-            <NavLink to="/a-propos" className={navLinkClass}>
-              Le Groupe
-            </NavLink>
-
             {/* =================================================
                 SERVICES
             ================================================== */}
@@ -190,6 +184,12 @@ export default function Navbar() {
             <NavLink to="/contact" className={navLinkClass}>
               Contact
             </NavLink>
+
+            {/* À PROPOS */}
+
+            <NavLink to="/a-propos" className={navLinkClass}>
+              À propos
+            </NavLink>
           </nav>
 
           {/* ===================================================
@@ -259,22 +259,6 @@ export default function Navbar() {
                 Accueil
               </NavLink>
 
-              {/* GROUPE */}
-
-              <NavLink
-                to="/a-propos"
-                onClick={closeMenus}
-                className={({ isActive }) =>
-                  `rounded-xl px-4 py-3.5 text-sm font-semibold transition ${
-                    isActive
-                      ? "bg-[#e8f0ff] text-[#0057D9]"
-                      : "text-neutral-800 hover:bg-[#e8f0ff] hover:text-[#0057D9]"
-                  }`
-                }
-              >
-                Le Groupe
-              </NavLink>
-
               {/* SERVICES */}
 
               <Link
@@ -315,6 +299,22 @@ export default function Navbar() {
                 }
               >
                 Contact
+              </NavLink>
+
+              {/* À PROPOS */}
+
+              <NavLink
+                to="/a-propos"
+                onClick={closeMenus}
+                className={({ isActive }) =>
+                  `rounded-xl px-4 py-3.5 text-sm font-semibold transition ${
+                    isActive
+                      ? "bg-[#e8f0ff] text-[#0057D9]"
+                      : "text-neutral-800 hover:bg-[#e8f0ff] hover:text-[#0057D9]"
+                  }`
+                }
+              >
+                À propos
               </NavLink>
 
               {/* =================================================
